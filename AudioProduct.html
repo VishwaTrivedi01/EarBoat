@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="E:/internship/earboat/css/audio.css">
+  <title>Audio Product</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg" style="margin: 0; padding: 0;background-color: black; height: 100px;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            	<li class="nav-item"><b style="color: red;font-size: 25px; padding-right: 900px;">Ear<b style="color: white;">Boat</b></b></li>
+                <li class="nav-item ">
+                    <a class="nav-link" style="color: grey;" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="AudioProduct.html">Audio Products</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" style="color: grey;" href="support.html">Support</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+ <!-- slideshow -->
+<div>
+		<div class="mySlides">
+		  <img src="E:/internship/earboat/img/mainslide1.jpg" style="width:100%; height: 500px;">
+		</div>
+
+		<div class="mySlides">
+		  <img src="E:/internship/earboat/img/mainslide2.jpg" style="width:100%;  height: 500px;">
+		</div>
+
+		<div class="mySlides">
+		  <img src="E:/internship/earboat/img/mainslide4.jpg" style="width:100%;  height: 500px;">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)" style="color: white;">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)" style="color: white;">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center; margin-top: -50px;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="col-12 heigh">
+	<br>&nbsp;&nbsp;
+	<h5>SPACESHIP GRADE ALUMINUM CASING ENSURES LONG-LASTING DURABILITY AND<br> RELIABLE CHARGING.</h5>
+</div>
+<br>
+<br><hr>
+<div style="background-color: white;" class="container">
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<h2>Philips SHL3060BK</h2>
+			<p>
+				This DJ inspired headphone produces powerful sound and bass. The design with rotatable soft ear cups you enjoy on the go a perfect listening experience.
+			</p>
+		</div>
+		<div class="col-md-12 col-lg-12">
+			<img src="E:/internship/earboat/img/default1.jpg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<h2>Philips SHL3060BK</h2>
+			<p>
+				This DJ inspired headphone produces powerful sound and bass. The design with rotatable soft ear cups you enjoy on the go a perfect listening experience.
+			</p>
+		</div>
+		<div class="col-md-12 col-lg-12">
+			<img src="E:/internship/earboat/img/default2.jpg">
+		</div>
+	</div>
+</div>
+<!-- for bottom image gallery -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<h3 style="text-align: center;">Image Gallery</h3>
+		</div>
+	</div>
+</div>
+<hr>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 col-lg-4">
+			<div class=card>
+			<img src="E:/internship/earboat/img/default8.jpg" style="width: 100%;">
+		</div>
+	</div>
+		<div class="col-md-4 col-lg-4">
+			<div class=card>
+			<img src="E:/internship/earboat/img/default8.jpg" style="width: 100%;">
+		</div>
+	</div>
+		<div class="col-md-4 col-lg-4">
+			<div class=card>
+			<img src="E:/internship/earboat/img/default8.jpg" style="width: 100%;">
+		</div>
+	</div>
+	</div>
+</div>
+<br>
+<!-- last text -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" style="font-family: sans-serif;">
+			<h3>Colors</h3><br>
+			<p>If you’re looking for an easy way to transform your mood, cue the music. Studies have shown that music<br> can buoy your mood and fend off depression. It can also improve blood flow in ways similar to statins,<br> lower your levels of stress-related hormones like cortisol and ease pain. Listening to music before an <br>operation can even improve post-surgery outcomes.</p>
+		</div>
+	</div>
+</div>
+<br><br><hr>
+<!-- footer -->
+<footer>
+	
+		<div class="row container-fluid">
+			<div class="col-12">
+				<h3 class="st">WE ARE SOCIAL</h3>
+			</div>
+		</div>
+		
+		<div class="row container-fluid">
+			<div class="col-12 SOCIAL">
+				<center>
+				<a href="#">
+					<img src="E:/internship/earboat/img/download.png" class="ig">
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<a>
+					<img src="E:/internship/earboat/img/twi.png" class="ig">
+				</a>
+			</center>      
+			</div>
+		</div><br><br><br><br>
+</footer>
+</body>
